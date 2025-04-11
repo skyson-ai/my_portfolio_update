@@ -124,19 +124,16 @@ export default function Home() {
               <ul className="space-y-2 text-gray-500 dark:text-gray-400">
                 <li className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-purple-500" />
-                  Bachelor's in Computer Science (or your actual degree)
+                  Bachelor's Degree in Computer Science, specializing in Information Systems and Software Engineering
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-purple-500" />X years of experience in backend
+                  <span className="h-1.5 w-1.5 rounded-full bg-purple-500" />3 years of experience in backend
                   development
                 </li>
+        
                 <li className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-purple-500" />
-                  Worked at [Previous Company] as [Position]
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-purple-500" />
-                  Currently working at [Current Company] as [Position]
+                  Currently working at Progistack Company as Python Developer
                 </li>
               </ul>
             </ParallaxSection>
