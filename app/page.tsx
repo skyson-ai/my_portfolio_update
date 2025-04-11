@@ -8,7 +8,6 @@ import SkillBadge from "@/components/skill-badge"
 import ContactForm from "@/components/contact-form"
 import FadeIn from "@/components/animations/fade-in"
 import StaggeredChildren from "@/components/animations/staggered-children"
-import ParticleBackground from "@/components/animations/particle-background"
 import TypingText from "@/components/animations/typing-text"
 import ParallaxSection from "@/components/animations/parallax-section"
 import FloatingElement from "@/components/animations/floating-element"
@@ -25,7 +24,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-        <ParticleBackground />
+      
         <div className="container px-4 md:px-6 mx-auto relative z-10">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <FadeIn direction="right" className="flex-1 space-y-4">
