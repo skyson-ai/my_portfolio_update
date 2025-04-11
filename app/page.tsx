@@ -179,7 +179,7 @@ export default function Home() {
                   <SkillBadge name="Pandas" level={75} />
                   <SkillBadge name="Scikit-learn" level={65} />
                   <SkillBadge name="TensorFlow" level={60} />
-                  <SkillBadge name="Data Analysis" level={70} />
+                  <SkillBadge name="Pytorch" level={70} />
                 </StaggeredChildren>
               </FadeIn>
             </div>
