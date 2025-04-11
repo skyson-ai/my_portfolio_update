@@ -130,6 +130,10 @@ export default function Home() {
                   <span className="h-1.5 w-1.5 rounded-full bg-purple-500" />3 years of experience in backend
                   development
                 </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-purple-500" />
+                  Worked at URIEL-GROUP as Software developer, at ProActive as fullstack developer, at Edahtech as network technician
+                </li>
         
                 <li className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-purple-500" />
