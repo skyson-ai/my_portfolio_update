@@ -164,6 +164,7 @@ export default function Home() {
                   <SkillBadge name="PostgreSQL" level={75} />
                   <SkillBadge name="RESTful APIs" level={85} />
                   <SkillBadge name="Docker" level={70} />
+                  <SkillBadge name="Odoo" level={60} />
                 </StaggeredChildren>
               </FadeIn>
             </div>
@@ -275,15 +276,17 @@ export default function Home() {
                   whileHover={{ x: 5, backgroundColor: "rgba(99, 102, 241, 0.1)" }}
                 >
                   <Mail className="h-5 w-5 text-purple-500" />
-                  <span>your-email@example.com</span>
+                  <Link href="https://mail.google.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  micheecephasl@gmail.com
+                  </Link>
                 </motion.div>
                 <motion.div
                   className="flex items-center gap-2 text-gray-500 dark:text-gray-400 p-3 rounded-lg border border-gray-200 dark:border-gray-800"
                   whileHover={{ x: 5, backgroundColor: "rgba(99, 102, 241, 0.1)" }}
                 >
                   <Github className="h-5 w-5 text-purple-500" />
-                  <Link href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                    github.com/yourusername
+                  <Link href="https://github.com/skyson-ai" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    github.com/skyson-ai
                   </Link>
                 </motion.div>
                 <motion.div
@@ -292,12 +295,12 @@ export default function Home() {
                 >
                   <Linkedin className="h-5 w-5 text-purple-500" />
                   <Link
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/mich%C3%A9e-cephas-leyenohin-0ab868286/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline"
                   >
-                    linkedin.com/in/yourusername
+                    linkedin.com/in/michee-cephas
                   </Link>
                 </motion.div>
               </div>
