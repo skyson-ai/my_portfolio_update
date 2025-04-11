@@ -15,6 +15,7 @@ import FloatingElement from "@/components/animations/floating-element"
 import RevealText from "@/components/animations/reveal-text"
 import Navbar from "@/components/navbar"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
                 <span className="block mt-2">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-600">
                     <TypingText
-                      sequences={["& ML Enthusiast", 1000, "& Python Expert", 1000, "& Problem Solver", 1000]}
+                      sequences={["& ML Enthusiast", 1000, "& Problem Solver", 1000]}
                     />
                   </span>
                 </span>
@@ -88,7 +89,13 @@ export default function Home() {
                 <div className="relative w-full h-80 md:h-96 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl overflow-hidden shadow-xl">
                   <div className="absolute inset-0 bg-black/10" />
                   <div className="absolute inset-0 flex items-center justify-center text-white text-lg font-medium">
-                    Your Photo Here
+                    <Image
+                      src="/mypicture.jpg"
+                      alt="Skyson developer"
+                      className="object-cover w-full h-full rounded-2xl"
+                      width={400}
+                      height={400}
+                    />
                   </div>
                 </div>
               </FloatingElement>
