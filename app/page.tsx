@@ -57,7 +57,7 @@ export default function Home() {
               </div>
               <div className="flex gap-4 pt-4">
                 <Link
-                  href="https://github.com"
+                  href="https://github.com/skyson-ai"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50 transition-transform hover:scale-110"
@@ -66,7 +66,7 @@ export default function Home() {
                   <span className="sr-only">GitHub</span>
                 </Link>
                 <Link
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/mich%C3%A9e-cephas-leyenohin-0ab868286/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50 transition-transform hover:scale-110"
@@ -75,7 +75,7 @@ export default function Home() {
                   <span className="sr-only">LinkedIn</span>
                 </Link>
                 <Link
-                  href="mailto:your-email@example.com"
+                  href="micheecephasl@gmail.com"
                   className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50 transition-transform hover:scale-110"
                 >
                   <Mail className="h-6 w-6" />
@@ -323,7 +323,7 @@ export default function Home() {
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              © {new Date().getFullYear()} Your Name. All rights reserved.
+              © {new Date().getFullYear()} Skyson dev. All rights reserved.
             </p>
             <div className="flex gap-4">
               <Link
