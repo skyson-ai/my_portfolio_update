@@ -21,12 +21,8 @@ export default function Navbar() {
   // Handle scroll events
   useEffect(() => {
     const handleScroll = () => {
-      // Update navbar background
       setIsScrolled(window.scrollY > 10)
-
-      // Update active section based on scroll position
       const sections = navItems.map((item) => item.href.substring(1))
-
       for (const section of sections) {
         const element = document.getElementById(section)
         if (element) {
@@ -46,10 +42,12 @@ export default function Navbar() {
   // Handle smooth scrolling
   const scrollToSection = (sectionId: string) => {
     setMobileMenuOpen(false)
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
+    setTimeout(() => {
+      const element = document.getElementById(sectionId)
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" })
+      }
+    }, 300) // Délai pour attendre la fin de l'animation du menu
   }
 
   return (
@@ -64,13 +62,11 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Mountain className="h-6 w-6 text-purple-600" />
             <span className="font-bold text-lg">Portfolio</span>
           </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <div key={item.name} className="relative">
@@ -94,7 +90,6 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -105,7 +100,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
@@ -123,8 +117,12 @@ export default function Navbar() {
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <button
-                    onClick={() => scrollToSection(item.href.substring(1))}
+                  <Link
+                    href={item.href}
+                    onClick={(e) => {
+                      e.preventDefault() // Empêche le comportement par défaut du lien
+                      scrollToSection(item.href.substring(1))
+                    }}
                     className={cn(
                       "block w-full text-left px-3 py-2 rounded-md text-sm font-medium transition-colors",
                       activeSection === item.href.substring(1)
@@ -133,7 +131,7 @@ export default function Navbar() {
                     )}
                   >
                     {item.name}
-                  </button>
+                  </Link>
                 </motion.div>
               ))}
             </div>
