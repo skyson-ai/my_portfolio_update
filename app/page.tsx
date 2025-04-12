@@ -213,12 +213,14 @@ export default function Home() {
           </FadeIn>
           <StaggeredChildren className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ProjectCard
-              title="E-commerce API"
-              description="A robust RESTful API built with Django REST Framework for an e-commerce platform with authentication, product management, and order processing."
-              tags={["Python", "Django", "PostgreSQL", "Docker"]}
-              image="/placeholder.svg?height=200&width=400"
-              link="#"
+              title="Blog API"
+              description="A robust RESTful API built with FastAPI for a blog platform with authentication, product management, and order processing."
+              tags={["Python", "FastAPI", "PostgreSQL", "Docker"]}
+              image="/logo.png"
+              link="http://localhost:8001/docs#/"
             />
+            
+
             <ProjectCard
               title="Real-time Chat Service"
               description="A high-performance chat service built with FastAPI and WebSockets, supporting thousands of concurrent connections."

@@ -19,7 +19,7 @@ export default function TypingText({
     <TypeAnimation
       sequence={sequences}
       wrapper="span"
-      speed={speed}
+      // speed={speed}
       repeat={repeat}
       className={className}
       cursor={true}
