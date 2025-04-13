@@ -214,7 +214,7 @@ export default function Home() {
           <StaggeredChildren className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ProjectCard
               title="Blog API"
-              description="A robust RESTful API built with FastAPI for a blog platform with authentication, product management, and order processing."
+              description="A robust RESTful API built with FastAPI for a blog platform with authentication."
               tags={["Python", "FastAPI", "PostgreSQL", "Docker"]}
               image="/logo.png"
               link="http://localhost:8001/docs#/"
